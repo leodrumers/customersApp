@@ -1,1 +1,26 @@
-<p>details works!</p>
+<div class="card" *ngIf="currentCustomer">
+    <div class="big-avatar">
+        {{currentCustomer.firstName.charAt(0)}}{{ currentCustomer.lastName.charAt(0)}}
+    </div>
+    <h4>{{currentCustomer.firstName}} {{ currentCustomer.lastName}}</h4>
+    <h5><i class="fas fa-phone"></i>{{currentCustomer.telePhoneNumber}}</h5>
+
+    <div class="details">
+        <div class="detail flex flex-ai-c">
+            <i class="fas fa-map-marker-alt"></i>{{ currentCustomer.addressLine1 }}, {{ currentCustomer.addressLine2 }}
+        </div>
+        <div class="detail flex flex-ai-c">
+            <i class="far fa-building"></i> {{ currentCustomer.city }}
+        </div>
+        <div class="detail flex flex-ai-c">
+            <i class="fas fa-box"></i>{{ currentCustomer.zipCode }}
+        </div>
+        <div class="detail flex flex-ai-c">
+            <i class="fas fa-envelope-open-text"></i>{{ currentCustomer.emailAddress }}
+        </div>
+    </div>
+</div>
+
+<div class="card" *ngIf="errorMessage">
+    {{errorMessage}}
+</div>

@@ -34,7 +34,7 @@ body {
 }
 
 .container {
-    border: 2px solid white;
+    border: 0.125rem solid white;
     margin-top: 5rem;
 }
 
@@ -48,7 +48,7 @@ li {
     position: relative;
     width: 25rem;
     height: 3rem;
-    border: 2px solid white;
+    border: 0.125rem solid white;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -80,4 +80,62 @@ li:hover {
 
 .phone {
     font-size: .8rem;
+}
+
+.card{
+    height: 22rem;
+    width: 18.75rem;
+    border-radius: 1rem;
+    border: 0.0625rem solid white;
+    box-shadow: 0 .31rem .9375rem rgba(50, 50, 50, .6);
+    background: linear-gradient(
+        to bottom,
+        $lime 6.875rem,
+        #fff 6.875rem
+    );
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .big-avatar {
+        display: block;
+        width: 6.25rem;
+        height: 6.25rem;
+        position: relative;
+        border-radius: 50%;
+        background: white;
+        color: black;
+        margin: 2rem auto 0;
+        padding: 1.5625rem 1.8125rem;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+
+    h4 {
+        color: $blue;
+        font-size: 1.25rem;
+    }
+    h5 {
+        color: #454545;
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+
+    i {
+        margin-right: 0.3125rem;
+        color: #000;
+    }
+
+    .details {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        color: #464530;
+
+        .detail {
+            margin-bottom: .5rem;
+        }
+    }
 }

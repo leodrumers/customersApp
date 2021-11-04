@@ -1,19 +1,21 @@
 export interface Customer {
-    salutation:      string;
-    firstName:       string;
-    lastName:        string;
-    addressLine1:    string;
-    addressLine2?:    string;
-    city:            string;
-    state:           string;
-    zipCode:         string;
-    emailAddress:    string;
+    id?: number;
+    salutation: string;
+    firstName: string;
+    lastName: string;
+    addressLine1: string;
+    addressLine2?: string;
+    city: string;
+    state: string;
+    zipCode: string;
+    emailAddress: string;
     telePhoneNumber: string;
 }
 
 
-export const CUSTOMER_LIST : Customer[] = [
+export const CUSTOMER_LIST: Customer[] = [
     {
+        id: 1,
         salutation: 'Mr',
         firstName: 'Jhon',
         lastName: 'Doe',
@@ -26,6 +28,7 @@ export const CUSTOMER_LIST : Customer[] = [
         telePhoneNumber: '5551345699'
     },
     {
+        id: 2,
         salutation: 'Mrs',
         firstName: 'Jane',
         lastName: 'Smith',
@@ -38,6 +41,7 @@ export const CUSTOMER_LIST : Customer[] = [
         telePhoneNumber: '2014056665'
     },
     {
+        id: 3,
         salutation: 'Mrs',
         firstName: 'Rufus',
         lastName: 'Y Irvin',
@@ -50,6 +54,7 @@ export const CUSTOMER_LIST : Customer[] = [
         telePhoneNumber: '7655795425'
     },
     {
+        id: 4,
         salutation: 'Mr',
         firstName: 'Alonzo L',
         lastName: 'Torres',
