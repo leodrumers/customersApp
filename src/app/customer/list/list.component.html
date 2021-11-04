@@ -1,0 +1,11 @@
+<h1>Customer list</h1>
+
+    <ul class="flex flex-jc-sb list">
+        <li *ngFor="let customer of customerList | async">
+            <span class="avatar">{{customer.firstName.charAt(0)}}{{ customer.lastName.charAt(0)}}</span>
+            <span class="name">{{customer.firstName}} {{ customer.lastName}}</span>
+            <span class="address">{{customer.telePhoneNumber}}</span>
+        </li>
+    </ul>
+
+
